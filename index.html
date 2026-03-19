@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beit El Sham | Authentic Syrian Restaurant</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">BEIT EL SHAM</a>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="home">Home</a></li>
+                    <li><a href="#about" data-i18n="about">About</a></li>
+                    <li><a href="#menu" data-i18n="menu">Menu</a></li>
+                    <li><a href="#services" data-i18n="services">Services</a></li>
+                    <li><a href="#gallery" data-i18n="gallery">Gallery</a></li>
+                    <li><a href="#reviews" data-i18n="reviews">Reviews</a></li>
+                    <li><a href="#contact" data-i18n="contact">Contact</a></li>
+                </ul>
+                <button class="lang-toggle">العربية</button>
+                <button class="btn btn-primary btn-sm reserve-btn" data-i18n="bookTable" style="padding: 0.5rem 1.2rem; font-size: 0.8rem; margin-left: 1rem;">Book a Table</button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1 data-i18n="heroTitle">Beit El Sham</h1>
+        <p data-i18n="heroSlogan">Authentic Syrian Taste in Every Bite</p>
+        <div class="hero-btns">
+            <a href="#menu" class="btn btn-primary" data-i18n="viewMenu">View Menu</a>
+            <button class="btn btn-outline reserve-btn" data-i18n="bookTable">Book a Table</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about" data-reveal>
+        <div class="about-img">
+            <img src="image/اللوجوا.jpg" alt="Restaurant Interior" referrerPolicy="no-referrer">
+        </div>
+        <div class="about-content">
+            <h2 data-i18n="aboutTitle">Our Story</h2>
+            <p data-i18n="aboutText">Beit El Sham brings the heart of Damascus to Minya. Our chefs use traditional recipes passed down through generations to ensure every dish tells a story of heritage and quality. We pride ourselves on using the freshest ingredients to create an unforgettable dining experience.</p>
+            <a href="#contact" class="btn btn-primary" data-i18n="contact">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="section-title" data-reveal>
+            <span data-i18n="menuSubtitle">Delicious Syrian Specialties</span>
+            <h2 data-i18n="menuTitle">Our Menu</h2>
+        </div>
+        <div class="menu-search-container" data-reveal>
+            <div class="search-wrapper">
+                <i data-lucide="search"></i>
+                <input type="text" id="menu-search" placeholder="Search for dishes or ingredients..." data-i18n-placeholder="searchPlaceholder">
+            </div>
+        </div>
+        <div class="menu-filters" data-reveal>
+            <button class="filter-btn active" data-filter="all" data-i18n="all">All</button>
+            <button class="filter-btn" data-filter="grills" data-i18n="grills">Grills</button>
+            <button class="filter-btn" data-filter="shawarma" data-i18n="shawarma">Shawarma</button>
+            <button class="filter-btn" data-filter="appetizers" data-i18n="appetizers">Appetizers</button>
+            <button class="filter-btn" data-filter="drinks" data-i18n="drinks">Drinks</button>
+        </div>
+        <div class="menu-grid" data-reveal>
+            <!-- Menu items injected by JS -->
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-title" data-reveal>
+            <span data-i18n="servicesSubtitle">How We Serve You</span>
+            <h2 data-i18n="servicesTitle">Our Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-reveal>
+                <div class="service-icon"><i data-lucide="utensils"></i></div>
+                <h3 data-i18n="dineIn">Dine-in</h3>
+                <p data-i18n="dineInDesc">Enjoy our warm atmosphere and elegant decor.</p>
+            </div>
+            <div class="service-card" data-reveal>
+                <div class="service-icon"><i data-lucide="shopping-bag"></i></div>
+                <h3 data-i18n="takeaway">Takeaway</h3>
+                <p data-i18n="takeawayDesc">Quick and easy pickup for your convenience.</p>
+            </div>
+            <div class="service-card" data-reveal>
+                <div class="service-icon"><i data-lucide="truck"></i></div>
+                <h3 data-i18n="delivery">No-contact Delivery</h3>
+                <p data-i18n="deliveryDesc">Safe and fast delivery to your doorstep.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-title" data-reveal>
+            <span data-i18n="gallerySubtitle">Visual Feast</span>
+            <h2 data-i18n="galleryTitle">Gallery</h2>
+        </div>
+        <div class="gallery-grid" data-reveal>
+            <div class="gallery-item"><img src="image/515436639_1399542532180356_995956902332113191_n.jpg" alt="Food 1" referrerPolicy="no-referrer"><div class="gallery-overlay"><i data-lucide="maximize"></i></div></div>
+            <div class="gallery-item"><img src="image/556909193_1380918700709406_9077916454856856850_n.jpg" alt="Food 2" referrerPolicy="no-referrer"><div class="gallery-overlay"><i data-lucide="maximize"></i></div></div>
+            <div class="gallery-item"><img src="image/594960954_1442364437898165_7746030545660750283_n.jpg" alt="Food 3" referrerPolicy="no-referrer"><div class="gallery-overlay"><i data-lucide="maximize"></i></div></div>
+            <div class="gallery-item"><img src="image/606458487_1459503152850960_4721207272384331228_n.jpg" alt="Food 4" referrerPolicy="no-referrer"><div class="gallery-overlay"><i data-lucide="maximize"></i></div></div>
+            <div class="gallery-item"><img src="image/611241174_1469965451804730_808332863682861886_n.jpg" alt="Food 5" referrerPolicy="no-referrer"><div class="gallery-overlay"><i data-lucide="maximize"></i></div></div>
+            <div class="gallery-item"><img src="image/611687670_1469965461804729_7695255395516007383_n.jpg" alt="Food 6" referrerPolicy="no-referrer"><div class="gallery-overlay"><i data-lucide="maximize"></i></div></div>
+            <div class="gallery-item"><img src="image/611978404_1469965481804727_8971988797397487897_n.jpg" alt="Food 7" referrerPolicy="no-referrer"><div class="gallery-overlay"><i data-lucide="maximize"></i></div></div>
+            <div class="gallery-item"><img src="image/619344200_1479217477546194_2343999897987403009_n.jpg" alt="Food 8" referrerPolicy="no-referrer"><div class="gallery-overlay"><i data-lucide="maximize"></i></div></div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="section-title" data-reveal>
+            <span data-i18n="reviewsSubtitle">Customer Love</span>
+            <h2 data-i18n="reviewsTitle">What They Say</h2>
+        </div>
+        <div class="rating-summary" data-reveal>
+            <div class="rating-number">3.8</div>
+            <div class="stars">
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star"></i>
+            </div>
+            <p data-i18n="reviewsSubtitle">Based on Google Reviews</p>
+        </div>
+        <div class="reviews-slider" data-reveal>
+            <div class="reviews-track">
+                <!-- Reviews injected by JS -->
+            </div>
+            <div class="slider-dots">
+                <!-- Dots injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title" data-reveal>
+            <span data-i18n="contactSubtitle">Get In Touch</span>
+            <h2 data-i18n="contactTitle">Find Us</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-reveal>
+                <h3 data-i18n="contactTitle">Contact Details</h3>
+                <div class="contact-item">
+                    <i data-lucide="map-pin"></i>
+                    <p data-i18n="address">Ahmed Shawky St, East Samalout, Minya, Egypt</p>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="phone"></i>
+                    <p data-i18n="phone">01026879698</p>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="clock"></i>
+                    <p data-i18n="hours">Open daily until 3 AM</p>
+                </div>
+                <a href="https://wa.me/201026879698" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;" data-i18n="orderNow">Order via WhatsApp</a>
+            </div>
+            <div class="map-container" data-reveal>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.6547654321!2d30.75!3d28.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDE4JzAwLjAiTiAzMMKwNDUnMDAuMCJF!5e0!3m2!1sen!2seg!4v1620000000000!5m2!1sen!2seg" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" class="footer-logo">BEIT EL SHAM</a>
+        <div class="social-links">
+            <a href="#"><i data-lucide="facebook"></i></a>
+            <a href="#"><i data-lucide="instagram"></i></a>
+            <a href="#"><i data-lucide="twitter"></i></a>
+        </div>
+        <p>&copy; 2026 Beit El Sham. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/201026879698" class="whatsapp-float" target="_blank">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Enlarged Image" class="lightbox-img">
+    </div>
+
+    <!-- Reservation Modal -->
+    <div class="modal" id="reservation-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 data-i18n="bookTable">Book a Table</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="res-name" data-i18n="nameLabel">Name</label>
+                    <input type="text" id="res-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-phone" data-i18n="phoneLabel">Phone</label>
+                    <input type="tel" id="res-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-date" data-i18n="dateLabel">Date</label>
+                    <input type="date" id="res-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-people" data-i18n="peopleLabel">Number of People</label>
+                    <input type="number" id="res-people" min="1" max="20" value="2" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-full" data-i18n="confirmBooking">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
